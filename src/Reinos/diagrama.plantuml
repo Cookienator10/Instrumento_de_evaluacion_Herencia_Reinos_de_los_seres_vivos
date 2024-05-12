@@ -1,0 +1,43 @@
+@startuml
+interface Reinos {
+    void mostrarCaracteristicas();
+}
+
+class Animal implements Reinos {
+    void mostrarCaracteristicas() {
+        // Implementación de las características de los animales
+    }
+}
+
+class Vegetal implements Reinos {
+    public void mostrarCaracteristicas() {
+        // Implementación de las características de los vegetales
+}
+}
+
+class Fungi implements Reinos {
+    void mostrarCaracteristicas() {
+        // Implementación de las características de los hongos
+ }
+}
+
+class Protoctista implements Reinos {
+    void mostrarCaracteristicas() {
+        // Implementación de las características de los protoctistas
+
+}
+}
+
+class Monera implements Reinos {
+    void mostrarCaracteristicas() {
+        // Implementación de las características de las moneras
+    }
+}
+
+Reinos <|-- Animal
+Reinos <|-- Vegetal
+Reinos <|-- Fungi
+Reinos <|-- Protoctista
+Reinos <|-- Monera
+
+@enduml
