@@ -1,43 +1,187 @@
 @startuml
+
 interface Reinos {
     void mostrarCaracteristicas();
 }
 
-class Animal implements Reinos {
-    void mostrarCaracteristicas() {
-        // Implementación de las características de los animales
-    }
+class Organismo {
 }
 
-class Vegetal implements Reinos {
-    public void mostrarCaracteristicas() {
-        // Implementación de las características de los vegetales
-}
+class Animal {
 }
 
-class Fungi implements Reinos {
-    void mostrarCaracteristicas() {
-        // Implementación de las características de los hongos
- }
+class Vegetal {
 }
 
-class Protoctista implements Reinos {
-    void mostrarCaracteristicas() {
-        // Implementación de las características de los protoctistas
-
-}
+class Fungi {
 }
 
-class Monera implements Reinos {
-    void mostrarCaracteristicas() {
-        // Implementación de las características de las moneras
-    }
+class Protoctista {
 }
 
-Reinos <|-- Animal
-Reinos <|-- Vegetal
-Reinos <|-- Fungi
-Reinos <|-- Protoctista
-Reinos <|-- Monera
+class Monera {
+}
+
+class Mamifero {
+    {field} - Nutrición: Autótrofa o heterótrofa
+    {field} - Organización celular: Pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Sexual
+    {field} - Locomoción: Autónoma
+}
+
+class Ave {
+    {field} - Nutrición: Autótrofa o heterótrofa
+    {field} - Organización celular: Pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Sexual
+    {field} - Locomoción: Autónoma
+}
+
+class Pez {
+    {field} - Nutrición: Autótrofa o heterótrofa
+    {field} - Organización celular: Pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Sexual
+    {field} - Locomoción: Autónoma
+}
+
+class Arbol {
+    {field} - Nutrición: Autótrofa
+    {field} - Organización celular: Pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Asexual
+    {field} - Locomoción: Inmóvil
+}
+
+class Flor {
+    {field} - Nutrición: Autótrofa
+    {field} - Organización celular: Pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Asexual
+    {field} - Locomoción: Inmóvil
+}
+
+class Hierba {
+    {field} - Nutrición: Autótrofa
+    {field} - Organización celular: Pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Asexual
+    {field} - Locomoción: Inmóvil
+}
+
+class Levadura {
+    {field} - Nutrición: Heterótrofa
+    {field} - Organización celular: Pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Asexual y por esporas
+    {field} - Locomoción: Inmóvil
+}
+
+class Moho {
+    {field} - Nutrición: Heterótrofa
+    {field} - Organización celular: Pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Asexual y por esporas
+    {field} - Locomoción: Inmóvil
+}
+
+class Seta {
+    {field} - Nutrición: Heterótrofa
+    {field} - Organización celular: Pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Asexual y por esporas
+    {field} - Locomoción: Inmóvil
+}
+
+class Protozoo {
+    {field} - Nutrición: Autótrofa y heterótrofa
+    {field} - Organización celular: Unicelulares y pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Asexual y sexual
+    {field} - Locomoción: Variable
+}
+
+class Alga {
+    {field} - Nutrición: Autótrofa y heterótrofa
+    {field} - Organización celular: Unicelulares y pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Asexual y sexual
+    {field} - Locomoción: Variable
+}
+
+class Mixofita {
+    {field} - Nutrición: Autótrofa y heterótrofa
+    {field} - Organización celular: Unicelulares y pluricelulares
+    {field} - Tipología celular: Eucariotas
+    {field} - Respiración: Aeróbica
+    {field} - Reproducción: Asexual y sexual
+    {field} - Locomoción: Variable
+}
+
+class Bacteria {
+    {field} - Nutrición: Heterótrofa
+    {field} - Organización celular: Unicelulares
+    {field} - Tipología celular: Procariotas
+    {field} - Respiración: Aeróbica y anaeróbica
+    {field} - Reproducción: Asexual
+    {field} - Locomoción: Inmóvil
+}
+
+class Arquea {
+    {field} - Nutrición: Heterótrofa
+    {field} - Organización celular: Unicelulares
+    {field} - Tipología celular: Procariotas
+    {field} - Respiración: Aeróbica y anaeróbica
+    {field} - Reproducción: Asexual
+    {field} - Locomoción: Inmóvil
+}
+
+class Cianobacteria {
+    {field} - Nutrición: Heterótrofa
+    {field} - Organización celular: Unicelulares
+    {field} - Tipología celular: Procariotas
+    {field} - Respiración: Aeróbica y anaeróbica
+    {field} - Reproducción: Asexual
+    {field} - Locomoción: Inmóvil
+}
+
+Reinos <|-- Organismo
+Organismo <|-- Animal
+Organismo <|-- Vegetal
+Organismo <|-- Fungi
+Organismo <|-- Protoctista
+Organismo <|-- Monera
+
+Animal <|-- Mamifero
+Animal <|-- Ave
+Animal <|-- Pez
+
+Vegetal <|-- Arbol
+Vegetal <|-- Flor
+Vegetal <|-- Hierba
+
+Fungi <|-- Levadura
+Fungi <|-- Moho
+Fungi <|-- Seta
+
+Protoctista <|-- Protozoo
+Protoctista <|-- Alga
+Protoctista <|-- Mixofita
+
+Monera <|-- Bacteria
+Monera <|-- Arquea
+Monera <|-- Cianobacteria
 
 @enduml
