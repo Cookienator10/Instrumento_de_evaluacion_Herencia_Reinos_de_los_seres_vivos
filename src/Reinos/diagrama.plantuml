@@ -2,12 +2,26 @@
 
 interface Reinos {
     void mostrarCaracteristicas();
+
 }
 
 class Organismo {
+Nutricion ())
+Organizacion celular()
+Respiracion()
+Reproducción()
+Locomoción()
+
+
+
+
+
 }
 
 class Animal {
+
+
+
 }
 
 class Vegetal {
